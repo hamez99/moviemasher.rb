@@ -251,7 +251,7 @@ module MovieMasher
       audio_cmd += 'audioloop,' if 1 < loops
       audio_cmd += "playat,#{graph[:start]},"
       audio_cmd += "select,#{graph[:offset]}"
-      audio_cmd += ",#{graph[:length]},#{graph[:waved_file]}"
+      audio_cmd += ",#{graph[:duration]},#{graph[:waved_file]}"
       audio_cmd += __audio_loops(loops, graph[:length])
       audio_cmd += __audio_gains(volume, graph)
       audio_cmd

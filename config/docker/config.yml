@@ -1,8 +1,17 @@
+
 ---
-:download_directory: /tmp/moviemasher/download
-:download_bytes: 100M
-:error_directory: /tmp/moviemasher/error
-:log_directory: /tmp/moviemasher/log
-:process_seconds: -2
+:chmod_directory_new: '0776'
+:download_directory: /var/moviemasher/download
+:download_bytes: 0M
+:error_directory: /var/moviemasher/error
+:queue_url:
+:log_directory: /var/moviemasher/log
 :verbose: debug
-:chmod_directory_new: '0777'
+:process_seconds: -3
+:queue_directory: /var/moviemasher/queue
+:queue_wait_seconds: 2
+:render_directory: /var/moviemasher/render
+:render_save: true
+:aws_access_key_id:
+:aws_secret_access_key:
+

@@ -57,7 +57,7 @@ RUN \
   cd /data; \
   git clone git://git.videolan.org/x264.git; \
   cd /data/x264; \
-  ./configure --prefix=/usr --enable-shared; \
+  ./configure --prefix=/usr --enable-shared --disable-asm; \
   make; \
   make install; \
   rm -R /data/x264
@@ -128,4 +128,4 @@ VOLUME /tmp/moviemasher/log
 VOLUME /tmp/moviemasher/render
 VOLUME /tmp/moviemasher/download
 VOLUME /tmp/moviemasher/error
-
+VOLUME /tmp/moviemasher/files
